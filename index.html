@@ -15,7 +15,16 @@
         <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
         
         <form action="cadastro.php" method="post" autocomplete="on">
-          
+          <div id="email-box">
+            <input type="email" name="email" id="email" autocomplete="email" placeholder="Seu e-mail">
+          </div>
+          <div id="senha-box">
+            <input type="password" name="senha" id="senha" autocomplete="current-password" placeholder="Sua senha" min="8">
+          </div>
+          <p class="entrar">
+            <input type="submit" value="Entrar" class="entrar">
+          </p>
+          <p><a href="esquecer-senha.html">Esqueci a senha</a></p>
         </form>
       </div>
     </section>
