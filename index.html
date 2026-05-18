@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Projeto Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/dispositivos-m.css" media="screen and (min-width: 768px) and (max-width: 992px)">
+    <link rel="stylesheet" href="estilos/dispositivos-g.css" media="screen and (min-width: 992px)">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
 </head>
 <body>
   <main>
@@ -13,18 +16,19 @@
       <div id="cadastro">
         <h1>Login</h1>
         <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+      <div id="email-box"> 
         
         <form action="cadastro.php" method="post" autocomplete="on">
-          <div id="email-box">
-            <input type="email" name="email" id="email" autocomplete="email" placeholder="Seu e-mail">
+            <input type="email" name="email" id="email" autocomplete="email" placeholder="Seu e-mail" required>
           </div>
           <div id="senha-box">
-            <input type="password" name="senha" id="senha" autocomplete="current-password" placeholder="Sua senha" min="8">
+            <input type="password" name="senha" id="senha" autocomplete="current-password" placeholder="Sua senha" minlength="8" required>
           </div>
           <p class="entrar">
             <input type="submit" value="Entrar" class="entrar">
           </p>
-          <p><a href="esquecer-senha.html">Esqueci a senha</a></p>
+          <p><a href="esquecer-senha.html">Esqueci a senha
+          <span class="material-symbols-outlined">mail</span></a></p>
         </form>
       </div>
     </section>
