@@ -10,25 +10,27 @@ body {
   width: 90%;
   font-size: 0px;
   direction: rtl;
+  text-align: center;
 }
 
 #imagem {
   position: relative;
-  top: 30px;
+  top: 46px;
   padding: 0px;
   display: inline-block;
   width: 30vw;
   height: 340px;
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 0px 20px 20px 0px;
   margin: 0px;
 }
 
 #cadastro {
   display: inline-block;
-  width: 55vw;
+  width: 40vw;
   height: 340px;
-  border-radius: 0px 20px 20px 0px;
+  border-radius: 20px 0px 0px 20px;
   margin: 0px;
+  direction: ltr;
 }
 
 #cadastro h1 {
@@ -37,6 +39,11 @@ body {
 
 #cadastro p, #senha, #email {
   font-size: 1rem;
+  text-align: left;
+}
+
+#email, #senha {
+  width: 90%;
 }
 
 a, input.entrar {
