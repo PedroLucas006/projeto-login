@@ -12,23 +12,27 @@
 <body>
   <main>
     <section id="login">
+      
       <div id="imagem"></div>
+      
       <div id="cadastro">
         <h1>Login</h1>
         <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-      <div id="email-box"> 
         
-        <form action="cadastro.php" method="post" autocomplete="on">
+        <div id="email-box"> 
+          <form action="cadastro.php" method="post" autocomplete="on"><span class="material-symbols-outlined">person</span>
             <input type="email" name="email" id="email" autocomplete="email" placeholder="Seu e-mail" required>
-          </div>
+        </div>
+          
           <div id="senha-box">
+            <span class="material-symbols-outlined">vpn_key</span>
             <input type="password" name="senha" id="senha" autocomplete="current-password" placeholder="Sua senha" minlength="8" required>
           </div>
-          <p class="entrar">
-            <input type="submit" value="Entrar" class="entrar">
-          </p>
-          <p><a href="esquecer-senha.html">Esqueci a senha
-          <span class="material-symbols-outlined">mail</span></a></p>
+          
+          <input type="submit" value="Entrar">
+          <a href="esquecer-senha.html">Esqueci a senha
+          <span class="material-symbols-outlined">mail</span></a>
+          
         </form>
       </div>
     </section>

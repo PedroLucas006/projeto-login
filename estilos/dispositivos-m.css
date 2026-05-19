@@ -3,41 +3,28 @@
 body {
   background-image: linear-gradient(to bottom, #5f2c82, #49a09d);
   background-attachment: fixed;
-  font-size: 1em;
+  font-size: 1.3em;
 }
 
 #login {
   width: 90%;
-  font-size: 0px;
+  height: 30%;
 }
 
 #imagem {
-  position: relative;
-  top: 30px;
-  padding: 0px;
-  display: inline-block;
-  width: 30vw;
-  height: 340px;
+  float: left;
+  width: 30%;
+  height: 100%;
   border-radius: 20px 0px 0px 20px;
-  margin: 0px;
 }
 
 #cadastro {
-  display: inline-block;
-  width: 55vw;
-  height: 340px;
+  float: right;
+  width: 70%;
+  height: 100%;
   border-radius: 0px 20px 20px 0px;
-  margin: 0px;
 }
 
-#cadastro h1 {
-  font-size: 2rem;
-}
-
-#cadastro p, #senha, #email {
-  font-size: 1rem;
-}
-
-a, input.entrar {
-  font-size: 1.2rem;
+#email, #senha {
+  width: 90%;
 }
